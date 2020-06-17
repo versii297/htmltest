@@ -1,22 +1,187 @@
-.slides{
-    
+/* slider*/
+/*
+body{
+    background-color: rgba(0, 139, 139, .2);
+
 }
-.slideshow{
-    display: flex;
-    
-    
+h1{
+    font-size: 2.4em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+    color: darkcyan;
 }
-.img{
+
+.main-div{
+    width: 70%;
+    height:450px;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-image: url('https://images.pexels.com/photos/1095817/pexels-photo-1095817.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: 100%;
+    position: absolute;
+    box-shadow: 2px 5px  15px darkcyan;
+    animation: slider 20s infinite linear;
+}
+
+@keyframes slider{
+    0%{background-image: url('https://images.pexels.com/photos/1095817/pexels-photo-1095817.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');}
+    20%{background-image: url("https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");}
+    40%{background-image: url("https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");}
+    80%{background-image: url("https://images.pexels.com/photos/414144/pexels-photo-414144.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");}
+}
+*/
+
+/* buttons*/
+
+/*didn't work----------------------------------
+.slide-container{
+    width: 800px;
     height: 600px;
-    width: 1000px;
-    border-radius: 5%;
-    margin: 20px;
-
-}
-.prev, .next{
-
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
 }
 
+.img-container{
+    width: 3200px;
+    height: 600px;
+    position: relative;
+    transition: left 2s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+}
+
+.img{
+    float: left;
+    width:800px;
+    height:600px;
+    margin: 0em;
+    padding: 0em;
+}
+
+.btn-container{
+    top: -20px;
+    position: relative;
+}
+
+.btn{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: darkgreen;
+}
+
+#img1:target ~ .img-container{
+    left: 0px;
+}
+
+#img2:target ~ .img-container{
+    left: -800px;
+}
+
+#img3:target ~ .img-container{
+    left: -1600px;
+}
+
+#img4:target ~ .img-container{
+    left: -24000px;
+}
+*/
 .body{
-    background-color: cadetblue;
+
+}
+
+.container{
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    background-color: darkslategray;
+    border: 10px solid black;
+    overflow: hidden;
+}
+
+input{
+    display: none;
+}
+
+.slides{
+   z-index: -1;
+   width: 100%;
+   height: 100%
+   
+}
+
+.img{
+    width: inherit;
+    height: inherit;
+}
+
+#i1, #i2, #i3, #i4{
+    display: none;
+}
+
+.prev, .next{
+    width: 12%;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    background-color: rgba(88,88,88, 0.1);
+    z-index: 99;
+    transition:  ease 1s;
+    cursor: pointer;
+}
+
+.prev{
+    left: 0;
+}
+
+.next{
+    right: 0;
+}
+
+.nav{
+    z-index: 99;
+    bottom: 12%;
+    position: absolute;
+    width: 100%;
+    height: 12px;
+    text-align: center;
+}
+
+.dots{
+    top:-5px;
+    width: 15px;
+    height: 15px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba(0, 0, 0, 1);
+}
+
+#i1 :checked ~ #img1,
+#i2 :checked ~ #img2,
+#i3 :checked ~ #img3,
+#i4 :checked ~ #img4{
+    z-index: 9;
+    anmation: scroll 1s ease-in-out;
+}
+
+#i1 :checked ~ .nav #dot1,
+#i2 :checked ~ .nav #dot2,
+#i3 :checked ~ .nav #dot3,
+#i4 :checked ~ .nav #dot4{
+    background: white;
+}
+
+.dots:hover{
+    background-color: #a38b8b;
 }
