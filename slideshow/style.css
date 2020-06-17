@@ -1,0 +1,6 @@
+.slides{
+    border-radius: 5%;
+}
+.slideshow{
+    transition: ease-in 3s;
+}
