@@ -1,6 +1,18 @@
 .slides{
-    border-radius: 5%;
+    
 }
 .slideshow{
-    transition: ease-in 3s;
+    display: flex;
+    
+    
+}
+.img{
+    height: 600px;
+    width: 1000px;
+    border-radius: 5%;
+    margin: 20px;
+
+}
+.prev, .next{
+    
 }
