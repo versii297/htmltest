@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Cousine' 'M PLUS 1p' sans-serif;
+}
+
+nav{
+    background: white;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+}
+
+
+.logo{
+    width: 150px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    font-size: 20px;
+    text-transform: uppercase;   
+}
+
+nav ul li a{
+    color: #203060;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+a.active, a:hover{
+    background: #d1ce94;
+    transition: .5s;
+}
+
+.chkbtn{
+    font-size: 24px;
+    color: #203060;
+    float: right;
+    cursor: pointer;
+    margin-right: 40px;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 900px){
+    .logo{
+        width: 100px;
+        height: 60px;
+        margin-bottom: 5px;
+        padding: 0;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px){
+    nav{
+        height: 130px; 
+    }
+
+    nav ul{
+        float: none;
+        margin: 0px;
+        line-height: 40px;
+        
+    }
+    nav ul li{
+        margin: -10px 0;
+    }
+    nav ul li a{
+        font-size: 14px;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+}
+
+
+/*----------------first section------------------*/
+.below-nav{
+    padding-top: 100px;
+}
+
+@media (max-width: 500px){
+    .below-nav{
+        padding-top: 130px;
+    }
+}
+
+
+
+.one{
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("slideshow-img/shallow-focus-photography-of-several-pizzas-1566837.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    
+}
+
+h1{
+    font-size: 10em;
+    letter-spacing: 0.25em;
+    color: lightgray;
+}
+
+/*********about us************/
+
+
+/***********our team****************/
+.two{
+    height: 700px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.65)), url("https://images.pexels.com/photos/33162/food-restaurant-menu-asia.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.team{
+    width: 500px;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 12px;
+    background-color: rgba(255,255,255,0.7);
+
+}
+
+.team h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 48px;
+    text-align: center;
+    color:black;
+    margin: 15px 0;
+}
+
+.team p{
+    font-family: Georgia, Times, 'Times New Roman', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+    text-align: center;
+}
