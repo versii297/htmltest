@@ -1,0 +1,203 @@
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', sans-serif ;
+}
+
+nav{
+    background-color: white;
+    position: fixed;
+    
+    height: 100px;
+    width: 100%;
+}
+
+.logo{
+    width: 120px;
+    height: 80px;
+    margin: 10px;
+}
+
+nav ul{
+    
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 5px;
+    font-size: 24px;
+    
+}
+
+nav ul li a{
+    color: #203060;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-family: 'Dancing Script';
+}
+
+a.active, a:hover{
+    background-color: #d1ce94;
+    transition: 0.5s;
+}
+
+@media (max-width: 900px){
+    .logo{
+        width: 100px;
+        height: 60px;
+        margin-bottom: 5px;
+        padding: 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px){
+    nav{
+        height: 130px; 
+    }
+
+    nav ul{
+        float: none;
+        margin: 0px;
+        line-height: 40px;
+        
+    }
+    nav ul li{
+        margin: -10px 0;
+    }
+    nav ul li a{
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+}
+
+/****************general**************/
+
+h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 200px;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.menu-box{
+    width: 100%;
+    margin: 0px 0px;
+    padding: 30px 60px;
+    text-align: center;
+    margin-top: 0;
+}
+
+
+h3{
+    font-size: 54px;
+    letter-spacing: 0.1em;
+    margin: 0 0 20px 0;
+    color:  #203060 ;
+}
+h4{
+    font-size: 38px;
+    margin-bottom: 10px;
+    color: #696628;
+}
+p{
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+}
+    
+h5{
+    font-size: 24px;
+    letter-spacing: .15em;
+    margin-bottom: 30px;
+}
+
+/****************mexican**************/
+
+.mexican{
+    padding-top:70px;    
+}
+
+.mexican-img{
+    height: 700px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.3)),url('https://cdn.cheapism.com/images/Budget_Friendly_Mexican_Dishes.2e16d0ba.fill-1440x605.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/****************Chinese**********************/
+.chinese-img{
+    height: 700px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.3)),url('https://cdn.cdnparenting.com/articles/2018/03/446808145-H.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*********************italian************************/
+.italian-img{
+    height: 700px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('https://cdn.dribbble.com/users/5481627/screenshots/12124978/media/62031f4a8386d8ff63b18cab2855fcd8.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*********************italian************************/
+.desserts-img{
+    height: 700px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('https://images.pexels.com/photos/205961/pexels-photo-205961.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*********************italian************************/
+.beverages-img{
+    height: 700px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('https://images.pexels.com/photos/109275/pexels-photo-109275.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/********************media query*********************/
+/*****@media (max-width:700px){
+    .mexican-img,
+    .chinese-img, 
+    .italian-img,
+    .desserts-img,
+    .beverages-img{
+        width:100%;
+        margin: 0;
+        position: absolute;
+    }
+}******/
