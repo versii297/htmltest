@@ -103,7 +103,7 @@ a.active, a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("slideshow-img/shallow-focus-photography-of-several-pizzas-1566837.jpg"); 
+    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -159,3 +159,15 @@ h1{
     color: black;
     text-align: center;
 }
+
+
+
+
+
+.footer{
+    font-family: 'Dancing Script';
+    text-align: center;
+    color: #696628;
+    font-size: 24px;
+    letter-spacing: 0.10em;
+    text-decoration: none;
