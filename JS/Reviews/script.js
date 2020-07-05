@@ -30,7 +30,7 @@ const reviews = [
         img: "images/Spongebob.jpg",
         info:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia autem tempore aliquam recusandae soluta accusamus ab, quaerat culpa, eum numquam dolores blanditiis quisquam necessitatibus. Quas porro soluta culpa ratione nam distinctio molestias, totam ipsam? Harum, quisquam veniam! Suscipit, natus debitis?"
-    },
+    }/*,
     {
         id: 5,
         author: "mr. bean",
@@ -38,7 +38,7 @@ const reviews = [
         img: "images/Mr Bean.png",
         info:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia autem tempore aliquam recusandae soluta accusamus ab, quaerat culpa, eum numquam dolores blanditiis quisquam necessitatibus. Quas porro soluta culpa ratione nam distinctio molestias, totam ipsam? Harum, quisquam veniam! Suscipit, natus debitis?"
-    }
+    }*/
 ];
 
 //select items
