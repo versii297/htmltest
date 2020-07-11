@@ -27,7 +27,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    width: 100%;
+    width: 100vh;
     font-family: var(--ff-cookie);
     z-index: 100;
 }
@@ -119,8 +119,8 @@ nav li a {
 .home {
     position: relative;
     top: 60px;
-    width: 100%;
-    height: calc(100vh - 60px);
+    width: 100vh;
+    height: calc(100vh - 80px);
     background-image: url('images/home-background.jpeg');
     background-repeat: no-repeat;
     background-position: center;
@@ -174,11 +174,12 @@ nav li a {
 .products {
     min-height: 100vh;
     padding: 40px 0;
+    width: 100vh;
 }
 
 .section-title {
     height: 150px;
-    width: 100%;
+    width: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
