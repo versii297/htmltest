@@ -43,24 +43,24 @@
 		<!--------about------->
 		<!-------Our Products------>
 		<section class="products" id="products">
-			<div class="section-title">
+			
+				<div class="section-title">
 				<h2>Our Products</h2>
 			</div>
-			<div class="product-shop">
-				<!------single product-->
-				<article class="product">
+			<div class="product-shop" id="productShop">
+				<!--<article class="product">
 					<div class="img-container">
-						<img src="images/images (10).jpeg" alt="" class="product-img">
+						<img src="images/images (10).jpeg" alt="" class="product-img" id="item-img">
 						<button class="bag-btn" data-id="1">
-							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							<i class="fa fa-shopping-cart" id="addToCart" aria-hidden="true"></i>
 							Add to cart
 						</button>
 					</div>
-					<h3>red velvet cake</h3>
-					<h4>$20</h4>
+					<h3 id="item-name">red velvet cake</h3>
+					<h4 id="item-price">$20</h4>
 				</article>
-				<!------end of single product-->
 			</div>
+			-->
 		</section>
 		<!----------------------cart--------------------->
 		<div class="cart-overlay">
@@ -71,7 +71,7 @@
 				<h2>Your Cart</h2>
 				<div class="cart-content">
 					<!-------cart item-------->
-					<div class="cart-item">
+					<div class="cart-item" id="itemsInCart">
 						<img src="images/images (10).jpeg" alt="product">
 						<div>
 							<h4>red velvet cake</h4>
@@ -79,56 +79,9 @@
 							<span class="delete-item">Delete</span>
 						</div>
 						<div>
-							<i class="fas fa-chevron-up    "></i>
-							<p class="item-count">1</p>
-							<i class="fas fa-chevron-down    "></i>
-						</div>
-
-						<img src="images/images (10).jpeg" alt="product">
-						<div>
-							<h4>red velvet cake</h4>
-							<h5>$ 20</h5>
-							<span class="delete-item">Delete</span>
-						</div>
-						<div>
-							<i class="fas fa-chevron-up    "></i>
-							<p class="item-count">1</p>
-							<i class="fas fa-chevron-down    "></i>
-						</div>
-
-						<img src="images/images (10).jpeg" alt="product">
-						<div>
-							<h4>red velvet cake</h4>
-							<h5>$ 20</h5>
-							<span class="delete-item">Delete</span>
-						</div>
-						<div>
-							<i class="fas fa-chevron-up    "></i>
-							<p class="item-count">1</p>
-							<i class="fas fa-chevron-down    "></i>
-						</div>
-
-						<img src="images/images (10).jpeg" alt="product">
-						<div>
-							<h4>red velvet cake</h4>
-							<h5>$ 20</h5>
-							<span class="delete-item">Delete</span>
-						</div>
-						<div>
-							<i class="fas fa-chevron-up    "></i>
-							<p class="item-count">1</p>
-							<i class="fas fa-chevron-down    "></i>
-						</div>
-						<img src="images/images (10).jpeg" alt="product">
-						<div>
-							<h4>red velvet cake</h4>
-							<h5>$ 20</h5>
-							<span class="delete-item">Delete</span>
-						</div>
-						<div>
-							<i class="fas fa-chevron-up    "></i>
-							<p class="item-count">1</p>
-							<i class="fas fa-chevron-down    "></i>
+							<button id="plus"><i class="fas fa-chevron-up"></i></button>
+							<p class="item-count"></p>
+							<button id="minus"><i class="fas fa-chevron-down"></i></button>
 						</div>
 					</div>
 
@@ -144,7 +97,8 @@
 
 	</main>
 
-	<script src="app.js"></script>
+	<script src="script.js"></script>
+	<script src="products.js"></script>
 	<script src="https://kit.fontawesome.com/08364f7b69.js" crossorigin="anonymous"></script>
 </body>
 
