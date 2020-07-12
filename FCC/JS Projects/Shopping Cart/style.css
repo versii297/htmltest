@@ -345,8 +345,8 @@ nav li a {
     flex-direction: column;
     font-family: var(--ff-cookie);
     z-index: 3;
-    
     overflow-y: scroll;
+    margin-right: 10px;
 }
 
 .cart-item {
@@ -407,6 +407,7 @@ nav li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .cart-footer h3 {
@@ -414,6 +415,7 @@ nav li a {
     font-family: var(--ff-satisfy);
     text-align: center;
     color: var(--clr-primary);
+    margin-bottom: 10px;
 }
 
 .clear-cart-btn {
