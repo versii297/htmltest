@@ -1,21 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script:wght@700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
 }
 
-body{
-    font-family: 'Dancing Script', 'M PLUS Rounded', sans-serif;
-    
-}
+
 
 nav{
     background: white;
     height: 100px;
     width: 100%;
     position: fixed;
+    z-index: 100;
 }
 
 
@@ -46,7 +47,7 @@ nav ul li a{
 }
 
 a.active, a:hover{
-    background: #d1ce94;
+    border-bottom: 5px solid #d1ce94;
     transition: .5s;
 }
 
@@ -99,23 +100,31 @@ a.active, a:hover{
 
 
 .one{
-    height: 700px;
+    top: 100px;
+    width: 100%;
+    height: calc(100vh - 100px);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); 
+    background-image: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url("images/food-bg.jpg"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    
-    
+    background-attachment: scroll; 
 }
 
 h1{
-    font-size: 10em;
-    letter-spacing: 0.25em;
-    color: lightgray;
+    font-size: 5em;
+    letter-spacing: ;
+    color: #d1ce94;
+    font-family: 'Cookie';
+}
+
+h2 {
+    font-size: 40px;
+    color: #d1ce94;
+    letter-spacing: 3px;
 }
 
 /*********about us************/
@@ -128,11 +137,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.65)), url("https://images.pexels.com/photos/33162/food-restaurant-menu-asia.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    
 }
 
 .team{
@@ -168,6 +173,7 @@ h1{
     font-family: 'Dancing Script';
     text-align: center;
     color: #696628;
-    font-size: 24px;
-    letter-spacing: 0.10em;
+    font-size: 20px;
+    letter-spacing: 1px;
     text-decoration: none;
+}

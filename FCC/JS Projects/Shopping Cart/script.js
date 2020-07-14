@@ -13,6 +13,19 @@ const itemPlus = document.querySelector('#plus');
 const itemMinus = document.querySelector('#minus');
 
 
+const hamburger = document.querySelector('.bar-icon');
+const navBar = document.querySelector('.nav-bar');
+const navLinks = document.querySelectorAll('.nav-bar li');
+
+hamburger.addEventListener('click', () => {
+    navBar.classList.toggle('open');
+});
+
+
+cartBtn.addEventListener('click', () => {
+    cartOverlay.classList.toggle('open');
+});
+
 
 
 

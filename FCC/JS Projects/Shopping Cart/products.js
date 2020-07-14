@@ -59,7 +59,7 @@ const shopItems = [
     "price": "$15",
     "image": "https://i.imgur.com/OOCtTX4.jpg"
   }
-]
+] 
 
 
 function displayProducts(product) {
@@ -82,6 +82,11 @@ document.getElementById("productShop").innerHTML =
 `
 ${shopItems.map(displayProducts)}
 `;
+
+
+document.getElementById("addToCart").onClick = () => {
+  
+}
 
 
 
