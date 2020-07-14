@@ -57,6 +57,10 @@ header{
     margin-bottom: 20px;
     word-wrap: break-word;
   }
+
+  #subscription {
+    margin-top: 40px;
+  }
   .subscribe{
     display:flex;
     flex-direction: column;

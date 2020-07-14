@@ -43,10 +43,11 @@ clearCartBtn.addEventListener('click', function () {
 });
 
 
+//
+const addToCart = document.querySelector('');
 
-//products
-const products = [
-    {
-        id: 1
-    }
-]
+addToCart.addEventListener('click', function(){
+    console.log('hi');
+})
+//document.getElementById("cart-item-name").innerHTML =
+ //itemName
