@@ -20,7 +20,7 @@
 }
 
 nav {
-    width: 100vw;
+    width: 100%;
     height: 80px;
     background-color: var(--bkg-primary);
     box-shadow: 2px 0 5px rgb(172, 113, 113);
@@ -59,7 +59,6 @@ nav {
     padding: 0 50px;
     pointer-events: none;
 }
-
 .nav-bar.open {
     display: block;
     pointer-events: all;
@@ -144,6 +143,7 @@ nav li a {
 
 .home {
     position: relative;
+    width: 100vw;
     top: 80px;
     height: calc(100vh - 80px);
     max-height: 800px;
@@ -214,26 +214,75 @@ nav li a {
 .section-title h2 {
     color: var(--clr-primary);
     font-family: var(--ff-cookie);
-    font-size: 40px;
+    font-size: 30px;
     border-bottom: 2px solid;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 }
 
 .product-shop {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-section {
+    display: flex;
     width: 90vw;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
     margin: 0 auto;
+}
+
+.ice-creams,
+.cakes,
+.brownies,
+.pudding,
+.parfaits {
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ice-creams {
+    background-image: url(images/images\ \(17\).jpeg);
+    border-radius: 10px;
+}
+
+.cakes {
+    background-image: url(images/images\ \(10\).jpeg);
+    border-radius: 10px;
+}
+
+.ice-creams.active,
+.cakes.active,
+.brownies.active,
+.pudding.active,
+.parfaits.active {
+    border: 5px ridge var(--clr-primary);
+    transform: scale(0.8);
+    transition: transform .5s ease-out;
+}
+
+#menu-container {
+    width: 90vw;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 20px 0;
+    grid-gap: 10px 30px;
+    margin: 20px auto;
+    border-top: 2px groove var(--clr-primary);
 }
 
 .img-container {
     position: relative;
     overflow: hidden;
-    
+    margin-top: 20px;
 }
 
-.img-container:hover {
+.img-container:hover .product-img{
     opacity: 0.6;
 }
 
@@ -242,7 +291,7 @@ nav li a {
     height: 300px;
     border-radius: 5px;
     box-shadow: 1px 1px 5px #000000;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .bag-btn {
@@ -270,7 +319,7 @@ nav li a {
     color: var(--clr-primary);
     font-family: var(--ff-cookie);
     font-size: 24px;
-    margin-top: 10px;
+    margin-top: 5px;
     letter-spacing: 1.5px;
     text-align: center;
 }
@@ -323,8 +372,6 @@ nav li a {
         width: 100vw;
     }
 }
-
-
 
 .cart-box {
     display: flex;

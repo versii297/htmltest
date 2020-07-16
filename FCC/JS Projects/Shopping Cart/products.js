@@ -1,4 +1,4 @@
-const shopItems = [
+const iceCreamMenu = [
   {
     "item": "Avocados Icecream",
     "price": "$10",
@@ -62,7 +62,7 @@ const shopItems = [
 ] 
 
 
-function displayProducts(product) {
+function displayProduct(product) {
     return `
     <article class="product">
         <div class="img-container">
@@ -77,20 +77,17 @@ function displayProducts(product) {
     </article>
  `   
 }
+/* -----------------ice cream menu ---------------*/
+const iceCreamBtn = document.querySelector('#ice-creams');
 
-document.getElementById("productShop").innerHTML =
+iceCreamBtn.addEventListener("click", () => {
+
+document.getElementById("menu-container").innerHTML = 
 `
-${shopItems.map(displayProducts)}
+${iceCreamMenu.map(displayProduct).join('')}
 `;
+iceCreamBtn.classList.toggle('active');
+});
+/* ------------end of ice cream menu ---------------------*/
 
-
-document.getElementById("addToCart").onClick = () => {
-  
-}
-
-
-
-    /*
-    add $ in csv file
-    get rid of comma
-    */
+/* ----------------cakes menu-----------------------*/
