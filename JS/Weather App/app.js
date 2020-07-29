@@ -5,6 +5,10 @@ window.addEventListener('load', ()=> {
   let tempDegree = document.querySelector('.temp-degree');
   let locationTimezone = document.querySelector('.location-timezone');
   let icon = document.querySelector('.icon');
+  const temperatureSection = document.querySelector('.degree-section');
+const tempUnit = document.querySelector('.unit');
+
+
 
   if(navigator.geolocation){
     navigator.geolocation.getCurrentPosition(position =>{
@@ -24,9 +28,22 @@ window.addEventListener('load', ()=> {
         tempDescription.textContent = data.current.weather[0].description;
         locationTimezone.textContent = data.timezone;
         icon.innerHTML = `<img src="http://openweathermap.org/img/wn/${data.current.weather[0].icon}@4x.png" alt="icon">`;
-        console.log(data);
-      });
+        //conversion
+        
+        let celsius = data.current.temp;
+        let fahrenheit = (celsius * (9 / 5)) + 32;
+        temperatureSection.onclick = () => {
+          if(tempUnit.textContent === "C"){
+            tempUnit.textContent = "F";
+            tempDegree.textContent = `${(Math.round(fahrenheit * 100)/100).toFixed(2)}°`;
+          }else {
+            tempUnit.textContent = "C";
+            tempDegree.textContent = `${data.current.temp}°`;
+          }
+        };
     });  
   } 
+)};
 });
+
 
