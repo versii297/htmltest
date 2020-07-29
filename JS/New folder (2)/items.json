@@ -1,0 +1,34 @@
+{
+  "cakes": [
+    {
+      "item": "Chocolate Cake",
+      "price": "$70",
+      "image": "https://i.imgur.com/LyxAK7G.jpg"
+    },
+    {
+      "item": "Red Velvet Cake",
+      "price": "$80",
+      "image": "https://i.imgur.com/O7kOyWZ.jpg"
+    },
+    {
+      "item": "Fruit Cake",
+      "price": "$70",
+      "image": "https://i.imgur.com/EPk3jVH.jpg"
+    },
+    {
+      "item": "Oreo Cake",
+      "price": "$80",
+      "image": "https://i.imgur.com/Zqaz8l4.jpg"
+    },
+    {
+      "item": "Lemon Cream Cake",
+      "price": "$85",
+      "image": "https://i.imgur.com/hk4j8Iv.jpg"
+    },
+    {
+      "item": "RoseWater Raspberry Cake",
+      "price": "$85",
+      "image": "https://i.imgur.com/CMtxF6g.jpg"
+    }
+  ]
+}
