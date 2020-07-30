@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+#start-btn {
+  background-color: rgb(204, 239, 240);
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  box-shadow: 0.5px 0.5px 5px rgb(33, 89, 97);
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#start-btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+main {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 350px) {
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.grid {
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(34, 32, 32);
+}
+
+.grid div {
+  height: 20px;
+  width: 20px;
+}
+
+.tetromino {
+  background-color: rgb(78, 206, 211);
+  box-shadow: 1px 1px 10px black;
+}
+
+.grid .taken {
+  
+}
+
+.mini-grid {
+  margin-left: 50px;
+  width: 80px;
+  width: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(34, 32, 32);
+}
+
+@media (max-width: 350px) {
+  .mini-grid {
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+}
+
+.mini-grid div {
+  width: 20px;
+  height: 20px;
+}
