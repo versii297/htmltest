@@ -57,7 +57,8 @@ nav ul li a{
     border-radius: 3px;
 }
 
-a.active, a:hover{
+nav a.active, 
+nav a:hover{
     border-bottom: 5px solid var(--clr-khaki);
     transition: var(--transition3s);
 }
@@ -166,11 +167,6 @@ h2 {
 
 }
 
-.baked-link {
-    color: var(--clr-blue);
-    font-size: 40px;
-}
-
 .underline {
     width: 100px;
     height: 5px;
@@ -190,6 +186,18 @@ h2 {
     font-size: 20px;
     padding: 10px;
     text-align: center;
+}
+
+.baked-link {
+    color: var(--clr-khaki);
+    font-size: 40px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.baked-link:hover {
+    color: var(--clr-blue);
+    transition: var(--transition3s);
 }
 
 /* ------------------ review section --------------- */
