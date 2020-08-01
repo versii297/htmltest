@@ -9,9 +9,10 @@
 }
 
 :root {
-    --clr-primary: rgb(145, 16, 16);
+    --clr-rosewood: rgb(145, 16, 16);
     --clr-primary-hover: rgb(223, 102, 102);
     --bkg-primary: rgb(233, 215, 193);
+    --bkg-white: #fff;
     --ff-merienda: 'Merienda One', cursive;
     --ff-cookie: 'Cookie', cursive;
     --ff-satisfy: 'Satisfy', cursive;
@@ -22,7 +23,7 @@
 nav {
     width: 100%;
     height: 80px;
-    background-color: var(--bkg-primary);
+    background-color: var(--bkg-white);
     box-shadow: 2px 0 5px rgb(172, 113, 113);
     display: flex;
     justify-content: space-between;
@@ -34,7 +35,7 @@ nav {
 
 .bar-icon {
     font-size: 30px;
-    color: var(--clr-primary);
+    color: var(--clr-rosewood);
     margin: 0 50px;
     cursor: pointer;
 }
@@ -46,14 +47,14 @@ nav {
 }
 
 .bar-icon:hover {
-    color: var(--clr-primary-hover);
+    color: var(--clr-rosewood-hover);
 }
 .nav-bar {
     display: none;
     position: absolute;
     top: 80px;
     height:calc(100vh - 80px);
-    background-color: var(--bkg-primary);
+    background-color: var(--bkg-white);
     justify-content: flex-start;
     width: 50%;
     padding: 0 50px;
@@ -75,7 +76,7 @@ nav li {
 }
 
 nav li a {
-    color: var(--clr-primary);
+    color: var(--clr-rosewood);
     font-size: 34px;
 }
 
@@ -96,7 +97,7 @@ nav li a {
 .logo {
     font-size: 40px;
     font-family: var(--ff-cedarville);
-    color: var(--clr-primary);
+    color: var(--clr-rosewood);
     font-weight: 1000;
     letter-spacing: 5px;
     transition: transform 0.5s ease;
@@ -116,7 +117,7 @@ nav li a {
     position: relative;
     margin: 0 50px;
     align-items: center;
-    color: var(--clr-primary);
+    color: var(--clr-rosewood);
     font-size: 30px;
 }
 
@@ -169,7 +170,7 @@ nav li a {
 }
 
 .banner h1 {
-    color: var(--clr-primary);
+    color: var(--clr-rosewood);
     font-size: 40px;
     margin: 20px 0;
     font-family: var(--ff-sacramento);
@@ -177,10 +178,10 @@ nav li a {
 
 .banner-btn {
     background-color: var(--bkg-primary);
-    color: var(--clr-primary);
+    color: var(--clr-rosewood);
     font-size: 20px;
     padding: 5px 10px;
-    border: 1px solid var(--clr-primary);
+    border: 1px solid var(--clr-rosewood);
     border-radius: 5px;
     cursor: pointer;
     outline: none;
@@ -189,7 +190,7 @@ nav li a {
 }
 
 .banner-btn a{
-    color: var(--clr-primary);
+    color: var(--clr-rosewood);
 }
 
 .banner-btn:hover {
@@ -212,11 +213,11 @@ nav li a {
 }
 
 .section-title h2 {
-    color: var(--clr-primary);
+    color: var(--clr-rosewood);
     font-family: var(--ff-cookie);
-    font-size: 30px;
+    font-size: 40px;
     border-bottom: 2px solid;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
 }
 
 .product-shop {
@@ -225,7 +226,9 @@ nav li a {
 }
 
 .menu-section {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 20px;
     width: 90vw;
     height: auto;
     justify-content: space-around;
@@ -239,21 +242,15 @@ nav li a {
 .pudding,
 .parfaits {
     cursor: pointer;
-    width: 200px;
-    height: 200px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.ice-creams {
-    background-image: url(images/images\ \(17\).jpeg);
-    border-radius: 10px;
-}
-
-.cakes {
-    background-image: url(images/images\ \(10\).jpeg);
-    border-radius: 10px;
+    background: var(--bkg-primary);
+    color: var(--clr-rosewood);
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid var(--clr-rosewood);
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--ff-satisfy);
+    transition: transform .5s ease;
 }
 
 .ice-creams.active,
@@ -261,9 +258,9 @@ nav li a {
 .brownies.active,
 .pudding.active,
 .parfaits.active {
-    border: 5px ridge var(--clr-primary);
+    border: 5px ridge var(--clr-rosewood);
     transform: scale(0.8);
-    transition: transform .5s ease-out;
+    
 }
 
 #menu-container {
@@ -273,7 +270,7 @@ nav li a {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 10px 30px;
     margin: 20px auto;
-    border-top: 2px groove var(--clr-primary);
+    border-top: 2px groove var(--clr-rosewood);
 }
 
 .img-container {
@@ -296,7 +293,7 @@ nav li a {
 
 .bag-btn {
     background-color: var(--bkg-primary);
-    color: var(--clr-primary);
+    color: var(--clr-rosewood);
     border: none;
     border-radius: 2px;
     padding: 5px 10px;
@@ -316,7 +313,7 @@ nav li a {
 }
 .product h3 {
     text-transform: capitalize;
-    color: var(--clr-primary);
+    color: var(--clr-rosewood);
     font-family: var(--ff-cookie);
     font-size: 24px;
     margin-top: 5px;
@@ -325,7 +322,7 @@ nav li a {
 }
 
 .product h4 {
-    color: var(--clr-primary);
+    color: var(--clr-rosewood);
     font-size: 20px;
     margin-top: 5px;
     font-family: var(--ff-cookie);
@@ -340,7 +337,7 @@ nav li a {
     right: 0;
     width: 40vw;
     height: calc(100vh - 80px);
-    background-color: var(--bkg-primary);
+    background-color: var(--bkg-white);
     z-index: 100;
     transition: transform 0.5s ease; 
     z-index: 2; 
@@ -384,7 +381,7 @@ nav li a {
 
 .close-cart {
     font-size: 24px;
-    color: var(--clr-primary);
+    color: var(--clr-rosewood);
     cursor: pointer;
     margin-left: 10px;
     margin-top: 10px;
@@ -399,7 +396,7 @@ nav li a {
     font-size: 30px;
     text-align: center;
     font-family: var(--ff-satisfy);
-    color: var(--clr-primary);
+    color: var(--clr-rosewood);
     z-index: 3;
     margin-top: 20px;
 }
@@ -408,7 +405,7 @@ nav li a {
     width: 100%;
     height: auto;
     padding: 10px 20px;
-    color: var(--clr-primary);
+    color: var(--clr-rosewood);
     display: flex;
     flex-direction: column;
     font-family: var(--ff-cookie);
@@ -488,12 +485,12 @@ nav li a {
     font-size: 30px;
     font-family: var(--ff-satisfy);
     text-align: center;
-    color: var(--clr-primary);
+    color: var(--clr-rosewood);
     margin-bottom: 10px;
 }
 
 .clear-cart-btn {
-    background-color: var(--clr-primary);
+    background-color: var(--clr-rosewood);
     color: var(--bkg-primary);
     font-size: 12px;
     text-transform: uppercase;
@@ -506,7 +503,7 @@ nav li a {
 
 .clear-cart-btn:hover {
     background-color: var(--clr-primary-hover);
-    color: var(--clr-primary);
+    color: var(--clr-rosewood);
 }
 
 
