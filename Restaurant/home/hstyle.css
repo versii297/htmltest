@@ -6,13 +6,24 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    font-family: 'Dancing Script', cursive;
 }
 
+:root {
+    --ff-dancing-script: 'Dancing Script', cursive;
+    --ff-cookie: 'Cookie';
+    --clr-white: #fff;
+    --clr-blue: #203060;
+    --clr-khaki: #d1ce94;
+    --transition5s: all .5s linear; 
+    --transition3s: all .3s linear; 
+}
 
+body {
+    font-family: var(--ff-dancing-script);
+}
 
 nav{
-    background: white;
+    background: var(--clr-white);
     height: 100px;
     width: 100%;
     position: fixed;
@@ -40,15 +51,15 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #203060;
+    color: var(--clr-blue);
     font-weight: 700;
     padding: 5px 10px;
     border-radius: 3px;
 }
 
 a.active, a:hover{
-    border-bottom: 5px solid #d1ce94;
-    transition: .5s;
+    border-bottom: 5px solid var(--clr-khaki);
+    transition: var(--transition3s);
 }
 
 
@@ -97,9 +108,7 @@ a.active, a:hover{
     }
 }
 
-
-
-.one{
+.home-section{
     top: 100px;
     width: 100%;
     height: calc(100vh - 100px);
@@ -114,62 +123,209 @@ a.active, a:hover{
     background-attachment: scroll; 
 }
 
+@media (min-height: 1000px) {
+    .home-section {
+        max-height: 700px;
+    }
+}
+
 h1{
     font-size: 5em;
-    letter-spacing: ;
-    color: #d1ce94;
-    font-family: 'Cookie';
+    color: var(--clr-khaki);
+    font-family: var(--ff-cookie);
 }
 
 h2 {
     font-size: 40px;
-    color: #d1ce94;
+    color: var(--clr-khaki);
     letter-spacing: 3px;
 }
 
+
 /*********about us************/
 
-
-/***********our team****************/
-.two{
-    height: 700px;
+.about-section{
+    height: 500px;
     width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
+
 
 .team{
     width: 500px;
     height: auto;
-    border: 2px solid white;
+    border: 2px solid var(--clr-white);
     border-radius: 12px;
     background-color: rgba(255,255,255,0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
+.baked-link {
+    color: var(--clr-blue);
+    font-size: 40px;
+}
+
+.underline {
+    width: 100px;
+    height: 5px;
+    background-color: var(--clr-blue);
+    border: none;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #2b3247;
+}
 .team h2{
-    
     font-size: 48px;
     text-align: center;
-    color:black;
-    margin: 15px 0;
+    color: var(--clr-blue);
 }
 
-.team p{
-    
+.team p {
     font-size: 20px;
     padding: 10px;
-    color: black;
     text-align: center;
 }
 
+/* ------------------ review section --------------- */
+.review-container {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.title h2 {
+    font-size: 48px;
+    font-family: var(--ff-dancing-script);
+    color: var(--clr-blue);
+}
+
+.review {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    max-width: 700px;
+    padding: 30px;
+    height: auto;
+    box-shadow: 0.5px 0.5px 5px var(--clr-khaki);
+    border-radius: 10px;
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+#person-img {
+    height: 100%;
+    width: 100%;
+}
+
+#name {
+    color: var(--clr-blue);
+    font-size: 28px;
+    margin: 10px 0;
+    height: 30px;
+}
+
+#job {
+    color: var(--clr-khaki);
+    font-size: 20px;
+    letter-spacing: 1px;
+    height: 25px;
+}
+
+#review-text {
+    margin-top: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: justify;
+    min-height: 120px;
+    height: auto;
+}
+
+@media (max-width: 400px){
+    #name {
+        font-size: 20px;
+        margin: 5px 0;
+        height: 20px;
+    }
+    
+    #job {
+        font-size: 16px;
+        margin: 5px 0;
+        height: 18px;
+    }
+
+    
+    #review-text {
+        min-height: 150px;
+        letter-spacing: 0px;
+    }
+}
+
+.prev-btn,
+.next-btn {
+    background-color: transparent;
+    border: none;
+    color: var(--clr-khaki);
+    font-size: 4rem;
+    text-shadow: 0.5px 0.5px 3px black;
+    transition: var(--transition5s);
+    outline: none;
+}
+
+@media (max-width: 500px){
+   .prev-btn,
+    .next-btn {
+        font-size: 2.5rem;
+    } 
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    color: var(--clr-blue);  
+} 
+
+.prev-btn {
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.next-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
 
 
 
 
 .footer{
+    height: 20px;
     font-family: 'Dancing Script';
     text-align: center;
     color: #696628;

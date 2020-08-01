@@ -87,3 +87,10 @@ main {
   width: 20px;
   height: 20px;
 }
+
+.control-btn {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(34, 32, 32);
+  border-radius: 50%;
+}

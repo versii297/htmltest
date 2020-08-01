@@ -2,73 +2,98 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="hstyle.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Cousine&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="hstyle.css" type="text/css">
+	<link rel="stylesheet" href="all.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-    <title>Restaurant</title>
+	<title>Restaurant</title>
 </head>
 
 <body>
-    <nav>
-        <!---------hamburger for later------
+	<nav>
+		<!---------hamburger for later------
          <input type="checkbox" id="check">
         <label for="check" class="chkbtn">
             <i class="fa fa-bars"></i>
         </label> ------->
 
-        <label><img src="https://cdn.dribbble.com/users/5481627/screenshots/12123107/shot-cropped-1592482468316.png" alt=""
-                class="logo"></a></label>
-        <ul>
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="http://versii297.github.io/htmltest/Restaurant/menu/" target="_blank">Menu</a>
-            </li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+		<label><img src="https://cdn.dribbble.com/users/5481627/screenshots/12123107/shot-cropped-1592482468316.png" alt=""
+				class="logo"></a></label>
+		<ul>
+			<li><a class="active" href="#home">Home</a></li>
+			<li><a href="http://versii297.github.io/htmltest/Restaurant/menu/" target="_blank">Menu</a>
+			</li>
+			<li><a href="#reviews">Reviews</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
 
-    <!-------here comes slides -->
-    <div class="below-nav">
-    
-    <!------------------first one----------->    
-        <div class="one">
-            <h1>φαί</h1>
-            <h2>Restaurants</h2>
-        </div>
+	<!-------here comes slides -->
+	<div class="below-nav">
 
-    
-
-<!-----------about us----------->    
-         <div class="two">
-           <div class="team">
-               <h2>About Us</h2>
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab eaque tenetur neque in, dolorem veritatis quo vitae voluptates dolorum magni natus laudantium iste doloremque mollitia velit est ullam fugit nostrum.</p>
-           </div>     
-        </div>
+		<!------------------first one----------->
+		<div id="home" class="home-section">
+			<h1>φαί</h1>
+			<h2>Restaurants</h2>
+		</div>
 
 
-<!------------about us----------->    
-<div class="three">
 
-</div>
+		<!-----------about us----------->
+		<div class="about-section">
+			<div class="team">
+				<h2>About Us</h2>
+				<div class="underline"></div>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab eaque tenetur neque in, dolorem
+					veritatis quo vitae voluptates dolorum magni natus laudantium iste doloremque mollitia velit est
+					ullam fugit nostrum.</p>
 
-    </div>
+					<h3 class="baked-link">
+						<a href="http://versii297.github.io/htmltest/Baked/"></a>
+						Baked >></h3>
+			</div>
+		</div>
 
-    </div>
+
+		<!------------Reviews----------->
+		<div id="reviews" class="review-section">
+			<div class="review-container">
+				<section class="title">
+					<h2>Reviews</h2>
+					<div class="underline"></div>
+				</section>
+
+				<section class="review">
+					<div class="img-container">
+						<img id="person-img" src="" alt="">
+					</div>
+					<h3 id="name"></h3>
+					<p id="job"></p>
+					<p id="review-text"></p>
+				</section>
+
+				<section>
+					<button class="prev-btn">
+						<i id="prev-btn" class="fas fa-chevron-left    "></i>
+					</button>
+					<button class="next-btn">
+						<i id="next-btn" class="fas fa-chevron-right    "></i>
+					</button>
+				</section>
+			</div>
+		</div>
+		<footer>
+			<p class="footer">Copyright © <i>φαί</i> Restaurants</p>
+
+		</footer>
+
+		<script src="hscript.js"></script>
+		<script src="https://kit.fontawesome.com/08364f7b69.js" crossorigin="anonymous"></script>
 </body>
 
-
-<footer>
-    <p class="footer">Copyright © <i>φαί</i> Restaurants</p>
-
-</footer>
 </html>
-
-
