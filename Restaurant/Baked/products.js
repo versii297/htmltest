@@ -125,7 +125,7 @@ const cakeMenu = [
  {
    "item": "Strawberry Cake",
    "price": " $85 ",
-   "image": "https://i.imgur.com/CMtxF6g.jpg"
+   "image": "https://i.imgur.com/Hyt91gM.jpg"
  }
 ];
 
@@ -192,7 +192,7 @@ const parfaitsMenu = [
  {
    "item": "Cheesecake Oreo Parfait",
    "price": " $25 ",
-   "image": "https://i.imgur.com/lGgdghu.jpg"
+   "image": "https://i.imgur.com/Nqrftga.jpg"
  },
  {
    "item": "Mango Chocolate Parfait",
