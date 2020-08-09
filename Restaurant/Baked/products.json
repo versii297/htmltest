@@ -1,1 +1,211 @@
-const cakesMenu =
+iceCreamMenu = [
+  {
+    "item": "Avocados Icecream",
+    "price": "$10",
+    "image": "https://i.imgur.com/kva1ykW.jpg"
+  },
+  {
+    "item": "Blueberry Buttermilk Icecream",
+    "price": "$15",
+    "image": "https://i.imgur.com/rMYWOBE.jpg"
+  },
+  {
+    "item": "Butterscotch Icecream",
+    "price": "$10",
+    "image": "https://i.imgur.com/EerQksu.jpg"
+  },
+  {
+    "item": "Caramel Butterscotch Icecream",
+    "price": "$15",
+    "image": "https://i.imgur.com/eSWnjdj.jpg"
+  },
+  {
+    "item": "Cherry Icecream",
+    "price": "$10",
+    "image": "https://i.imgur.com/0zjMhIQ.jpg"
+  },
+  {
+    "item": "Chocolate Icecream",
+    "price": "$10",
+    "image": "https://i.imgur.com/Ka8zcQH.jpg"
+  },
+  {
+    "item": "Mango Icecream",
+    "price": "$10",
+    "image": "https://i.imgur.com/6EonccF.jpg"
+  },
+  {
+    "item": "Mint Chocochip Icecream",
+    "price": "$15",
+    "image": "https://i.imgur.com/Ul45MqJ.jpg"
+  },
+  {
+    "item": "Raspberry Icecream",
+    "price": "$10",
+    "image": "https://i.imgur.com/srSOGNP.jpg"
+  },
+  {
+    "item": "Strawberry Icecream",
+    "price": "$10",
+    "image": "https://i.imgur.com/svHIm0i.jpg"
+  },
+  {
+    "item": "Vanilla Icecream",
+    "price": "$10",
+    "image": "https://i.imgur.com/ofLlH7i.jpg"
+  },
+  {
+    "item": "Wasabi Cucumber Icecream",
+    "price": "$15",
+    "image": "https://i.imgur.com/OOCtTX4.jpg"
+  }
+]
+
+const cakeMenu = [
+  {
+    "item": "Chocolate Cake",
+    "price": " $70 ",
+    "image": "https://i.imgur.com/LyxAK7G.jpg"
+  },
+  {
+    "item": "Red Velvet Cake",
+    "price": " $80 ",
+    "image": "https://i.imgur.com/O7kOyWZ.jpg"
+  },
+  {
+    "item": "Fruit Cake",
+    "price": " $70 ",
+    "image": "https://i.imgur.com/EPk3jVH.jpg"
+  },
+  {
+    "item": "Oreo Cake",
+    "price": " $80 ",
+    "image": "https://i.imgur.com/Zqaz8l4.jpg"
+  },
+  {
+    "item": "Lemon Cream Cake",
+    "price": " $85 ",
+    "image": "https://i.imgur.com/hk4j8Iv.jpg"
+  },
+  {
+    "item": "RoseWater Raspberry Cake",
+    "price": " $85 ",
+    "image": "https://i.imgur.com/CMtxF6g.jpg"
+  },
+  {
+    "item": "Strawberry Cake",
+    "price": " $85 ",
+    "image": "https://i.imgur.com/Hyt91gM.jpg"
+  }
+];
+
+const browniesMenu = [
+  {
+    "item": "Chocolate Brownies",
+    "price": " $20 ",
+    "image": "https://i.imgur.com/YRRxGCv.jpg"
+  },
+  {
+    "item": "White Chocolate Brownies",
+    "price": " $20 ",
+    "image": "https://i.imgur.com/VgXOYwC.jpg"
+  },
+  {
+    "item": "Chocolate Marshmallo Brownies",
+    "price": " $25 ",
+    "image": "https://i.imgur.com/UAhiM9X.jpg"
+  },
+  {
+    "item": "Walnut Brownies",
+    "price": " $25 ",
+    "image": "https://i.imgur.com/5BZHMeq.jpg"
+  },
+  {
+    "item": "White Chocolate Cranberry Fudge",
+    "price": " $25 ",
+    "image": "https://i.imgur.com/AxYWvlz.jpg"
+  }
+];
+
+const parfaitsMenu = [
+  {
+    "item": "Chocolate Parfait",
+    "price": " $25 ",
+    "image": "https://i.imgur.com/cTM0Q2d.jpg"
+  },
+  {
+    "item": "Cheesecake Oreo Parfait",
+    "price": " $25 ",
+    "image": "https://i.imgur.com/Nqrftga.jpg"
+  },
+  {
+    "item": "Mango Chocolate Parfait",
+    "price": " $25 ",
+    "image": "https://i.imgur.com/HPaMvBC.jpg"
+  },
+  {
+    "item": "Strawberry Parfait",
+    "price": " $25 ",
+    "image": "https://i.imgur.com/eip6aYO.jpg"
+  },
+  {
+    "item": "Yogurt Museli Parfait",
+    "price": " $25 ",
+    "image": "https://i.imgur.com/qSDfZ9P.jpg"
+  },
+  {
+    "item": "Raspberry Chocolate Parfait",
+    "price": " $25 ",
+    "image": "https://i.imgur.com/uVgNd1q.jpg"
+  }
+];
+
+const puddingMenu = [
+  {
+    "item": "Custard Pudding",
+    "price": " $20 ",
+    "image": "https://i.imgur.com/ex102HO.jpg"
+  },
+  {
+    "item": "Banana Cream Pudding",
+    "price": " $20 ",
+    "image": "https://i.imgur.com/eW5d6wT.jpg"
+  },
+  {
+    "item": "Cheesecake Pudding",
+    "price": " $20 ",
+    "image": "https://i.imgur.com/nrsp0lT.jpg"
+  },
+  {
+    "item": "Flaxseed Raspberry Pudding",
+    "price": " $25 ",
+    "image": "https://i.imgur.com/XKXFQqZ.jpg"
+  },
+  {
+    "item": "Mango Pudding",
+    "price": " $20 ",
+    "image": "https://i.imgur.com/ajLQYif.jpg"
+  },
+  {
+    "item": "Strawberry Chia Pudding",
+    "price": " $25 ",
+    "image": "https://i.imgur.com/9a1baI0.jpg"
+  },
+  {
+    "item": "Lemon Pudding",
+    "price": " $20 ",
+    "image": "https://i.imgur.com/wvNjfjf.jpg"
+  },
+  {
+    "item": "Tangerine Pudding",
+    "price": " $25 ",
+    "image": "https://i.imgur.com/m0mTeZv.jpg"
+  },
+  {
+    "item": "Vanilla & Chocolate Pudding",
+    "price": " $20 ",
+    "image": "https://i.imgur.com/JbYh8JH.jpg"
+  }
+]
+}
+

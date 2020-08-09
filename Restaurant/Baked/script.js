@@ -18,13 +18,18 @@ const navBar = document.querySelector('.nav-bar');
 const navLinks = document.querySelectorAll('.nav-bar li');
 
 hamburger.addEventListener('click', () => {
-    navBar.classList.toggle('open');
+    if (navBar.style.display === 'block') {
+        navBar.style.display = 'none';
+    } else {
+        navBar.style.display = 'block';
+    }
 });
 
 
 cartBtn.addEventListener('click', () => {
     cartOverlay.classList.toggle('open');
 });
+
 
 
 
@@ -56,11 +61,13 @@ clearCartBtn.addEventListener('click', function () {
 });
 
 
-//
-const addToCart = document.querySelector('');
+// add to cart btn
 
-addToCart.addEventListener('click', function(){
-    console.log('hi');
-})
 //document.getElementById("cart-item-name").innerHTML =
  //itemName
+
+const bagBtn = document.querySelector('.bag-btn');
+
+bagBtn.addEventListener('click', function clickk() {
+  console.log('hello');
+});

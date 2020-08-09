@@ -1,0 +1,21 @@
+  <!--
+  <img src="" id="coolDrink" alt="" width="480">
+  <script>
+    console.log('about to fetch');
+
+    getCoolDrink()
+      .then(response => {
+        console.log('yay!');
+      })
+      .catch(error => {
+        console.log('error!');
+        console.error(error);
+      })
+
+    async function getCoolDrink() {
+      const response = await fetch('cool_drink.jpeg');
+      const blob = await response.blob();
+      document.getElementById('coolDrink').src = URL.createObjectURL(blob);
+    }
+  </script>
+  -->

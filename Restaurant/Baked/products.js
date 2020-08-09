@@ -67,9 +67,8 @@ function displayProduct(product) {
     <article class="product">
         <div class="img-container">
             <img src="${product.image}" alt="" class="product-img">
-            <button class="bag-btn" data-id="1">
-                <i class="fa fa-shopping-cart" id="addToCart" aria-hidden="true"></i>
-                Add to cart
+            <button class="bag-btn">
+                <i class="fa fa-shopping-cart" class="addToCart" aria-hidden="true"></i>
             </button>
         </div>
         <h3 id="item-name">${product.item}</h3>
@@ -287,3 +286,20 @@ ${puddingMenu.map(displayProduct).join('')}
 `;
 puddingBtn.classList.toggle('active');
 });
+
+
+// add to cart btn
+/*const addToCartBtn = document.querySelectorAll('.bag-btn');
+
+function addItemsToCart(){
+  addToCartBtn.forEach(function(btn){
+    btn.addEventListener('click', ()=> {
+      console.log('hello');
+    });
+  });
+}; 
+
+addToCartBtn.addEventListener('click', () => {
+  console.log('hello');
+})
+*/

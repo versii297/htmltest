@@ -40,6 +40,7 @@ nav {
     cursor: pointer;
 }
 
+
 @media (max-width: 400px) {
     .bar-icon {
         margin: 0 30px;
@@ -47,22 +48,18 @@ nav {
 }
 
 .bar-icon:hover {
-    color: var(--clr-rosewood-hover);
+    color: var(--clr-primary-hover);
 }
 .nav-bar {
     display: none;
     position: absolute;
     top: 80px;
-    height:calc(100vh - 80px);
+    height: calc(100vh - 80px);
     background-color: var(--bkg-white);
     justify-content: flex-start;
     width: 50%;
     padding: 0 50px;
     pointer-events: none;
-}
-.nav-bar.open {
-    display: block;
-    pointer-events: all;
 }
 
 @media (max-width: 400px) {
@@ -253,21 +250,20 @@ nav li a {
     transition: transform .5s ease;
 }
 
-.ice-creams.active,
-.cakes.active,
-.brownies.active,
-.pudding.active,
-.parfaits.active {
-    border: 5px ridge var(--clr-rosewood);
+.ice-creams:hover,
+.cakes:hover,
+.brownies:hover,
+.pudding:hover,
+.parfaits:hover {
+    border: 2px ridge var(--clr-rosewood);
     transform: scale(0.8);
-    
 }
 
 #menu-container {
     width: 90vw;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 10px 30px;
     margin: 20px auto;
     border-top: 2px groove var(--clr-rosewood);
@@ -285,7 +281,7 @@ nav li a {
 
 .product-img {
     width: 100%;
-    height: 300px;
+    height: 250px;
     border-radius: 5px;
     box-shadow: 1px 1px 5px #000000;
     margin-bottom: 5px;
@@ -487,6 +483,25 @@ nav li a {
     text-align: center;
     color: var(--clr-rosewood);
     margin-bottom: 10px;
+}
+
+.checkout-btn {
+    cursor: pointer;
+    background: var(--bkg-primary);
+    color: var(--clr-rosewood);
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 2px solid var(--clr-rosewood);
+    text-align: center;
+    font-size: 24px;
+    font-family: var(--ff-satisfy);
+    transition: all .5s ease;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.checkout-btn:active {
+    transform: scale(0.9);
 }
 
 .clear-cart-btn {
